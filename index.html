@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Sean Brookstein | Portfolio Website</title>
+  </head>
+  <body>
+    <!-- Landing Page -->
+    <section id="home" class="landing-page">
+      <!-- Navbar -->
+      <aside class="sidebar">
+        <a class="logo-link" href="#home">
+          <h2 class="logo-text">{<span class="primary-color">S</span>B}</h2>
+        </a>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li class="item">
+              <a href="#home" class="item-link"
+                ><i class="fa-solid fa-house fa-3x"></i
+                ><span class="sidebar-text">Home</span></a
+              >
+            </li>
+            <li class="item">
+              <a href="#about" class="item-link"
+                ><i class="fa-solid fa-address-card fa-3x"></i
+                ><span class="sidebar-text">About</span></a
+              >
+            </li>
+            <li class="item">
+              <a href="#projects" class="item-link"
+                ><i class="fa-solid fa-diagram-project fa-3x"></i
+                ><span class="sidebar-text">Projects</span></a
+              >
+            </li>
+            <li class="item">
+              <a href="#contact" class="item-link"
+                ><i class="fa-solid fa-phone fa-3x"></i
+                ><span class="sidebar-text">Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- Landing Page Content -->
+      <main class="landing-page-content">
+        <h1 class="landing-heading">
+          Hey there, I'm <span class="primary-color">Sean</span
+          ><span class="wave">👋</span>
+        </h1>
+        <p class="landing-text lead">
+          I'm a Frontend Web Developer, specialising in creating silky smooth
+          user experiences
+        </p>
+        <a href="#about" class="btn-primary">Learn More</a>
+      </main>
+      <div class="overlay"></div>
+      <video
+        class="main-video"
+        src="media/water.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div class="bottom-divider"><embed src="media/wave.svg" /></div>
+    </section>
+    <section id="about" class="inner-page">
+      <h2 class="heading">Get To Know Me</h2>
+      <div class="flex-content">
+        <div class="text-content share">
+          <p>
+            I love telling stories, whether it be fun or serious. Web
+            development is like telling engaging stories or more importantly,
+            delivering a message. Let's be honest who doesn't enjoy a good
+            story?
+          </p>
+          <p>
+            Through many years of working in sales I have gained various sales
+            techniques and polished my soft skills when it comes to working with
+            and understanding people. When you combine these skills with my web
+            development skills, you have a recipe for engaging websites and web
+            applications.
+          </p>
+        </div>
+        <div class="svg-container share">
+          <embed src="media/about.svg" />
+        </div>
+      </div>
+    </section>
+    <!-- Project Section -->
+    <section class="inner-page" id="projects">
+      <div class="top-divider"><embed src="media/wave-projects.svg" /></div>
+      <h2 class="heading">My Projects</h2>
+
+      <div class="card-gallery">
+        <div class="card-flex">
+          <!-- First Card -->
+          <div class="card" data-target="home">
+            <div class="card-image project1"></div>
+            <div class="card-content">
+              <h3 class="card-heading">Portfolio Site</h3>
+              <p class="card-description">
+                My portfolio website to showcase my skills
+              </p>
+              <div class="tech">
+                <i class="fa-brands fa-html5 fa-3x"></i>
+                <i class="fa-brands fa-css3-alt fa-3x"></i>
+                <i class="fa-brands fa-js fa-3x"></i>
+                <a href="#home" class="btn-code">Code</a>
+              </div>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div
+            class="card"
+            data-target="https://codepen.io/CassiuSRSA/pen/WNzdXQX"
+          >
+            <div class="card-image project2"></div>
+            <div class="card-content">
+              <h3 class="card-heading">Tic Tac Toe</h3>
+              <p class="card-description">
+                A simple Tic Tac Toe game using JavaScript
+              </p>
+              <div class="tech">
+                <i class="fa-brands fa-html5 fa-3x"></i>
+                <i class="fa-brands fa-css3-alt fa-3x"></i>
+                <i class="fa-brands fa-js fa-3x"></i>
+                <a
+                  href="https://codepen.io/CassiuSRSA/pen/WNzdXQX"
+                  target="_blank"
+                  class="btn-code"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Third Card -->
+          <div
+            class="card"
+            data-target="https://tiny-rabanadas-baf99b.netlify.app"
+          >
+            <div class="card-image project3"></div>
+            <div class="card-content">
+              <h3 class="card-heading">Beano's Coffee Shop</h3>
+              <p class="card-description">
+                A brochure website for a fictional coffee shop
+              </p>
+              <div class="tech">
+                <i class="fa-brands fa-html5 fa-3x"></i>
+                <i class="fa-brands fa-css3-alt fa-3x"></i>
+                <a
+                  href="https://github.com/CassiuSRSA/beanos-coffee-shop"
+                  target="_blank"
+                  class="btn-code"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        href="downloads/Sean Brookstein Web Dev CV 2022.pdf"
+        download="Sean Brookstein Web Dev Resume"
+        class="btn-resume"
+        >Download Resume</a
+      >
+    </section>
+    <!-- Contact Section -->
+    <section class="inner-page" id="contact">
+      <div class="top-divider"><embed src="media/wave-contact.svg" /></div>
+      <h2 class="heading">Let's Talk</h2>
+      <div class="flex-grid">
+        <div class="contact-details">
+          <h3 class="contact-heading">Call Me:</h3>
+          <a href="tel:+27714419399">(+27) 071 441 9399</a>
+          <h3 class="contact-heading">Mail Me:</h3>
+          <a href="mailto:info@seanbrookstein.co.za"
+            >info@seanbrookstein.co.za</a
+          >
+          <h3 class="contact-heading">WhatsApp Me</h3>
+          <a href="https://wa.me/27714419399" target="_blank"
+            ><i class="fa-brands fa-whatsapp fa-3x"></i
+          ></a>
+        </div>
+        <form action="contact.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <input class="button" type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <a
+        href="https://www.linkedin.com/in/sean-brookstein-3944824a/"
+        target="_blank"
+        ><i class="fa-brands fa-linkedin fa-3x"></i
+      ></a>
+      <a href="https://github.com/CassiuSRSA" target="_blank"
+        ><i class="fa-brands fa-github fa-3x"></i
+      ></a>
+      <a href="https://codepen.io/CassiuSRSA" target="_blank"
+        ><i class="fa-brands fa-codepen fa-3x"></i
+      ></a>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
