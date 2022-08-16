@@ -6,11 +6,10 @@ const message = document.querySelector("#message");
 
 cards.forEach((card) =>
   card.addEventListener("click", function (e) {
-    console.log(e.target);
     if (e.target.closest(".card").dataset.target === "home") {
       window.scrollTo(0, 0);
     } else if (!e.target.classList.contains("btn-code")) {
-      window.open(e.target.closest(".card").dataset.target);
+      window.open(e.target.closest(".card").dataset.target, "blank");
     }
   })
 );
