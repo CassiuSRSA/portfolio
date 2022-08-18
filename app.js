@@ -16,7 +16,12 @@ cards.forEach((card) =>
 
 btn.addEventListener("click", function (e) {
   // e.preventDefault();
-  if (!name.value || !email.value || !message.value) {
+  if (
+    name.value.length < 2 ||
+    email.value.length < 2 ||
+    message.value.length < 2 ||
+    email.value.indexOf("@") === -1
+  ) {
     alert(`Please enter valid details`);
   } else {
     alert("Thank you for your submission");
