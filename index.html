@@ -199,16 +199,21 @@
         <div class="contact-details">
           <h3 class="contact-heading">Call Me:</h3>
           <a href="tel:+27714419399">(+27) 071 441 9399</a>
-          <h3 class="contact-heading">Mail Me:</h3>
-          <a href="mailto:info@seanbrookstein.co.za"
-            >info@seanbrookstein.co.za</a
-          >
+          
           <h3 class="contact-heading">WhatsApp Me</h3>
           <a href="https://wa.me/27714419399" target="_blank"
             ><i class="fa-brands fa-whatsapp fa-3x"></i
           ></a>
         </div>
-        <form action="contact.php" method="post">
+        <form action="https://formsubmit.co/15d8c6c7108d5dc760928c2c4e1921d0 " method="post" target="_blank">
+          <!-- 'n lekker heuningpot -->
+          <input type="hidden" name="_honey" style="display: none;">
+          <!-- Disable reCAPTCHA -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Setting success link for submission -->
+          <!-- <input type="hidden" name="_next" value="https://seanbrookstein.co.za/success.html"> -->
+          <!-- Set up a subject for each submission -->
+          <input type="hidden" name="_subject" value="New form submission!">
           <label for="name">Name:</label>
           <input type="text" name="name" id="name" required />
           <label for="email">Email:</label>
@@ -221,7 +226,7 @@
             rows="10"
             required
           ></textarea>
-          <input class="button" type="submit" value="Submit" />
+          <button class="button" type="submit" value="Submit" />Submit</button>
         </form>
       </div>
     </section>
