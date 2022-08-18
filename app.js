@@ -1,5 +1,5 @@
 const cards = document.querySelectorAll(".card");
-const btn = document.querySelector(".button");
+const form = document.querySelector("form");
 const name = document.querySelector("#name");
 const email = document.querySelector("#email");
 const message = document.querySelector("#message");
@@ -14,7 +14,7 @@ cards.forEach((card) =>
   })
 );
 
-btn.addEventListener("click", function (e) {
+form.addEventListener("submit", function (e) {
   // e.preventDefault();
   if (
     name.value.length < 2 ||
